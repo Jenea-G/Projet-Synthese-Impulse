@@ -1,0 +1,49 @@
+h1 {
+    font-family: var(--font-titres);
+    letter-spacing: -1px;
+    display: inline-block;
+    background: var(--gradient-tertiary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.gradient-border-on-hover:hover {
+  /* On hover, change the inner background to a different color (e.g., a darker color) */
+  color: transparent;
+  background: var(--gradient-tertiary);
+      background-clip: text;
+} 
+
+.dropdown-menu {
+
+    & ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    & .dropdown-item:hover {
+        color: var(--bs-emphasis-color) !important;
+    }
+}
+
+header {
+    z-index: 10;
+    position: relative;
+}
+
+.banniere {
+    padding: 250px 0 150px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-image: url(../images/banniere.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(24, 0, 55, 0.5);
+    background-blend-mode: multiply;
+}

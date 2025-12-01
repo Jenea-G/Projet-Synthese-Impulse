@@ -1,0 +1,50 @@
+/* montrer le dropdown au survol */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: flex;
+    margin-top: 0;
+}
+
+.navbar {
+    --bs-navbar-color: var(--bs-white);
+    --bs-navbar-hover-color: var(--bs-emphasis-color);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active,
+.navbar .dropdown-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+.btn {
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    min-width: 200px;
+}
+
+.btn-light {
+    --bs-btn-bg: var(--bs-secondary-color);
+    --bs-btn-border-color: var(--bs-secondary-color);
+    --bs-btn-hover-bg: var(--bs-secondary-color);
+    --bs-btn-hover-border-color: var(--bs-emphasis-color);
+    --bs-btn-focus-shadow-rgb: var(--bs-tertiary-color-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: var(--bs-white);
+    --bs-btn-active-border-color: var(--bs-emphasis-color);
+}
+
+.btn-primary {
+    --bs-btn-color: black;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-emphasis-color);
+    --bs-btn-focus-shadow-rgb: var(--bs-tertiary-color-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: var(--bs-btn-hover-bg);
+    --bs-btn-active-border-color: var(--bs-emphasis-color);
+}
