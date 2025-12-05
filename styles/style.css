@@ -5,21 +5,36 @@ h1 {
     background: var(--gradient-tertiary);
     background-clip: text;
     -webkit-background-clip: text;
+    /* For compatibility */
     color: transparent;
-    -webkit-text-fill-color: transparent;
 }
 
+h2 {
+    font-family: var(--font-titres);
+    letter-spacing: 1.5rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
 
+h3 {
+    font-size: 1.8rem;
+}
 
-.gradient-border-on-hover:hover {
-  /* On hover, change the inner background to a different color (e.g., a darker color) */
-  color: transparent;
-  background: var(--gradient-tertiary);
-      background-clip: text;
-} 
+h4 {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gradient-on-hover:hover {
+    color: transparent;
+    background: var(--gradient-tertiary);
+    background-clip: text;
+}
 
 .dropdown-menu {
-
     & ul {
         list-style: none;
         padding: 0;
@@ -36,7 +51,8 @@ header {
 }
 
 .banniere {
-    padding: 250px 0 150px;
+    height: 550px;
+    padding-top: 220px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -46,4 +62,117 @@ header {
     background-size: cover;
     background-color: rgba(24, 0, 55, 0.5);
     background-blend-mode: multiply;
+}
+
+.services {
+    margin-top: 550px;
+
+    & .services__row {
+        border-bottom: 1px solid var(--bs-primary);
+    }
+
+    & .services__element {
+        position: relative;
+        top: 21px;
+    }
+
+    & .services__link {
+        display: block;
+        margin-bottom: -20px;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    & .services__link:hover {
+        background: var(--gradient-tertiary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    & .test {
+        overflow: hidden;
+    }
+
+    & .services__fleche {
+        width: 1320px;
+        float: right;
+        filter: opacity(50%);
+    }
+}
+
+.pourquoi__card {
+    width: 27%;
+    height: 200px;
+}
+
+.pourquoi__card--img {
+    background-position: center;
+    background-size: cover;
+}
+
+.pourquoi__card--img:nth-of-type(2) {
+    background-image: url(../images/choix-equipe.jpg)
+}
+
+.pourquoi__card--img:nth-of-type(4) {
+    background-image: url(../images/choix-ages.png);
+}
+
+.pourquoi__card--img:nth-of-type(6) {
+    background-image: url(../images/choix-dynamique.jpg);
+}
+
+@media only screen and (max-width: 1000px) {
+    .pourquoi__card {
+        width: 45%;
+    }
+
+    .pourquoi__card:nth-of-type(1) {
+        order: 1;
+    }
+
+    .pourquoi__card:nth-of-type(2) {
+        order: 3;
+    }
+
+    .pourquoi__card:nth-of-type(3) {
+        order: 5;
+    }
+
+    .pourquoi__card:nth-of-type(4) {
+        order: 2;
+    }
+
+    .pourquoi__card:nth-of-type(5) {
+        order: 4;
+    }
+
+    .pourquoi__card:nth-of-type(6) {
+        order: 6;
+    }
+}
+
+.citation {
+    & .citation__text {
+        font-size: 1.3rem;
+        border-bottom: 5px solid var(--transparent-secondary);
+    }
+
+    & .citation__image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    & img {
+        width: 100px;
+    }
+}
+
+footer {
+    background-color: color-mix(in srgb, var(--bs-primary), black 10%);
 }

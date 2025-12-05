@@ -15,6 +15,7 @@
   --bs-emphasis-color-rgb: 148, 52, 238;
 
   --gradient-tertiary: linear-gradient(.25turn, #FFF1FD 0%, #F849C1 50%, #6F2CFF 100%);
+  --transparent-secondary:#cb9abc88;
 
   --bs-light-rgb: 255, 255, 255;
 

@@ -7,11 +7,13 @@
 .navbar {
     --bs-navbar-color: var(--bs-white);
     --bs-navbar-hover-color: var(--bs-emphasis-color);
+    --bs-nav-link-font-size: 1.1rem;
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link.active,
-.navbar .dropdown-item:hover {
+.nav-link:hover,
+.nav-link.active,
+.dropdown-item:hover {
+    color: var(--bs-emphasis-color);
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-thickness: 2px;
@@ -47,4 +49,9 @@
     --bs-btn-active-color: var(--bs-btn-hover-color);
     --bs-btn-active-bg: var(--bs-btn-hover-bg);
     --bs-btn-active-border-color: var(--bs-emphasis-color);
+}
+
+.btn-dark {
+    border: none;
+    --bs-btn-hover-border-color: none;
 }
