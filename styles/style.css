@@ -45,7 +45,7 @@ a {
     }
 }
 
-header {
+.page-accueil header {
     z-index: 10;
     position: relative;
 }
@@ -64,6 +64,21 @@ header {
     background-blend-mode: multiply;
 }
 
+.link {
+        display: block;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 500;
+        transition: 0.3s;
+}
+
+.link:hover {
+        background: var(--gradient-tertiary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+}
+
 .services {
     margin-top: 550px;
 
@@ -76,30 +91,14 @@ header {
         top: 21px;
     }
 
-    & .services__link {
-        display: block;
-        margin-bottom: -20px;
-        color: black;
-        font-size: 1.5rem;
-        font-weight: 500;
-        transition: 0.3s;
-    }
-
-    & .services__link:hover {
-        background: var(--gradient-tertiary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-
-    & .test {
-        overflow: hidden;
-    }
-
     & .services__fleche {
         width: 1320px;
         float: right;
         filter: opacity(50%);
+    }
+
+    & .link{
+    margin-bottom: -20px;   
     }
 }
 
@@ -158,7 +157,7 @@ header {
 .citation {
     & .citation__text {
         font-size: 1.3rem;
-        border-bottom: 5px solid var(--transparent-secondary);
+        border-bottom: 5px solid var(--light-secondary);
     }
 
     & .citation__image {
@@ -173,6 +172,19 @@ header {
     }
 }
 
-footer {
+footer,
+.header-dark {
     background-color: color-mix(in srgb, var(--bs-primary), black 10%);
+}
+
+.courses-card {
+    width: 350px;
+    height: 200px;
+}
+
+.courses-card--img {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/images-cours/ballet.svg);
 }
