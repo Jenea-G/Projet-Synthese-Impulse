@@ -178,13 +178,58 @@ footer,
 }
 
 .courses-card {
-    width: 350px;
+    width: 330px;
     height: 200px;
+    background-color: white;
+    padding: 10px;
+}
+
+.page-cours{
+    background-color: color-mix(in srgb, var(--bs-primary), white 90%);
 }
 
 .courses-card--img {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.courses-card--img:nth-of-type(2) {
     background-image: url(../images/images-cours/ballet.svg);
+}
+
+.courses-card--img:nth-of-type(6) {
+    background-image: url(../images/images-cours/hip-hop1.svg);
+}
+
+.courses-card--img:nth-of-type(7) {
+    background-image: url(../images/images-cours/claquette.svg);
+}
+
+.courses-card--img:nth-of-type(11) {
+    background-image: url(../images/images-cours/jazz-2.svg);
+}
+
+.courses-card--img:nth-of-type(13) {
+    background-image: url(../images/images-cours/Jazz.svg);
+}
+
+.courses-card--img:nth-of-type(15) {
+    background-image: url(../images/images-cours/ballet-2.svg);
+}
+.courses-card--img:nth-of-type(17) {
+    background-image: url(../images/images-cours/hip-hop2.svg);
+}
+
+@media only screen and (max-width: 1045px) { 
+    .courses-card:nth-of-type(13),
+    .courses-card--img:nth-of-type(17) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 699px) { 
+    .courses-card--img:nth-of-type(7) {
+        display: none;
+    }
 }
