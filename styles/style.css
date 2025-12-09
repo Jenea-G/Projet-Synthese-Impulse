@@ -233,3 +233,21 @@ footer,
         display: none;
     }
 }
+
+.intro {
+    & .intro__titre {
+        width: 300px;
+        flex-shrink: 0;
+    }
+
+    & .intro__decoration{
+    width: auto;
+    overflow: hidden;
+    }
+
+    & .intro__infos {
+    background-color: var(--light-secondary);
+    }
+}
+
+
