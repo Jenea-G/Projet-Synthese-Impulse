@@ -250,10 +250,50 @@ footer,
     }
 }
 
+.t-niveau {
+    white-space: nowrap!important;
+
+    & h4 {
+    margin-bottom: 0;
+    }
+}
+
 .t-head,
 .t-notes {
 font-weight: 400;
 font-size: 14px;
 }
 
+@media (max-width: 768px) {
+    thead {
+        display: none;
+    }
 
+    table, 
+    tbody, 
+    tr, 
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 1px solid var(--light-primary);
+    }
+
+    td:not(.t-niveau) {
+        padding: 0.3rem 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: var(--bs-primary);
+    }
+}
