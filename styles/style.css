@@ -184,8 +184,9 @@ footer,
     padding: 10px;
 }
 
-.page-cours{
-    background-color: color-mix(in srgb, var(--bs-primary), white 90%);
+.page-cours,
+.mission{
+    background-color: var(--light-bg-primary);
 }
 
 .courses-card--img {
@@ -248,6 +249,10 @@ footer,
     & .intro__infos {
     background-color: var(--light-secondary);
     }
+
+    & img{
+        max-height: 450px;
+    }
 }
 
 .t-niveau {
@@ -296,4 +301,8 @@ font-size: 14px;
         font-weight: 600;
         color: var(--bs-primary);
     }
+}
+
+.special {
+    font-family: "Barlow Semi Condensed", sans-serif;
 }

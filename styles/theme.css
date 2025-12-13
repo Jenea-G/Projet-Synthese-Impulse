@@ -17,6 +17,7 @@
   --gradient-tertiary: linear-gradient(.25turn, #FFF1FD 0%, #F849C1 50%, #6F2CFF 100%);
   --light-secondary: color-mix(in srgb, var(--bs-secondary), white 20%);
   --light-primary: color-mix(in srgb, var(--bs-primary), white 20%);
+  --light-bg-primary: color-mix(in srgb, var(--bs-primary), white 90%);
 
   --bs-light-rgb: 255, 255, 255;
 
