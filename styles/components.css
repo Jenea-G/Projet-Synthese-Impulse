@@ -64,3 +64,18 @@
 th{
     white-space: nowrap!important;
 }
+
+.carousel-indicators [data-bs-target]{
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.visually-hidden{
+    color: black;
+}
+.form-floating textarea.form-control {
+  min-height: 280px;
+}

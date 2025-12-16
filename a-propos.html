@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impulse Accueil</title>
+    <title>Impulse À propos</title>
+    <link rel="icon" type="image/x-icon" href="/images/icones/icone-s.svg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icones -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
     <!-- Thème / Composants / Styles -->
     <link rel="stylesheet" href="styles/theme.css">
     <link rel="stylesheet" href="styles/components.css">
@@ -82,13 +86,19 @@
                 <div class="row">
                     <div class="col-12 col-md-6 d-flex flex-column justify-content-around">
                         <div>
-                            <p>Au Studio de danse Impulse, nous croyons que la danse est bien plus qu'un mouvement : c'est une manière de s'exprimer, de s'accomplir et de se sentir bien dans son corps. Situé au cœur de la communauté, notre studio accueille des danseurs de tous âges et de tous niveaux, dans une ambiance chaleureuse et dynamique.</p>
-                            <p>Fondé par Marie-Denise, danseuse passionnée et pédagogue engagée, le studio est né de son désir de rendre la danse accessible à tous et de créer un espace où chacun peut évoluer à son rythme. Forte de son expérience et de sa vision inclusive, Marie-Denise met un point d'honneur à encourager l'expression personnelle, la confiance en soi et le plaisir du mouvement.</p>
+                            <p>Au Studio de danse Impulse, nous croyons que la danse est bien plus qu'un mouvement :
+                                c'est une manière de s'exprimer, de s'accomplir et de se sentir bien dans son corps.
+                                Situé au cœur de la communauté, notre studio accueille des danseurs de tous âges et de
+                                tous niveaux, dans une ambiance chaleureuse et dynamique.</p>
+                            <p>Fondé par Marie-Denise, danseuse passionnée et pédagogue engagée, le studio est né de son
+                                désir de rendre la danse accessible à tous et de créer un espace où chacun peut évoluer
+                                à son rythme. Forte de son expérience et de sa vision inclusive, Marie-Denise met un
+                                point d'honneur à encourager l'expression personnelle, la confiance en soi et le plaisir
+                                du mouvement.</p>
                         </div>
                     </div>
                     <div class="col-12 mb-3 col-md-6 mb-md-0">
-                        <img src="images/directrice.jpg"
-                            alt="Photo de Marie-Denise">
+                        <img src="images/directrice.jpg" alt="Photo de Marie-Denise">
                     </div>
                 </div>
             </div>
@@ -96,17 +106,207 @@
         <section class="py-5 mission">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="text-center col-6">
+                    <div class="text-center col-10 col-md-6">
                         <h3>Notre mission</h3>
-                        <p class="fs-5 fw-semi-bold special">Offrir un espace où chacun peut découvrir la danse à son rythme, développer sa confiance et progresser dans un environnement bienveillant. Que ce soit pour apprendre, se dépasser ou simplement bouger avec plaisir, nous mettons tout en œuvre pour offrir une expérience accessible, moderne et motivante.</p>
+                        <p class="fs-5 fw-semi-bold special">Offrir un espace où chacun peut découvrir la danse à son
+                            rythme, développer sa confiance et progresser dans un environnement bienveillant. Que ce
+                            soit pour apprendre, se dépasser ou simplement bouger avec plaisir, nous mettons tout en
+                            œuvre pour offrir une expérience accessible, moderne et motivante.</p>
                     </div>
-                </div>  
+                </div>
+            </div>
+        </section>
+        <section class="valeurs py-5">
+            <div class="container">
+                <h3 class="mb-4">Nos valeurs</h3>
+
+                <div class="d-flex flex-wrap gap-3 justify-content-around">
+
+
+                    <div class="valeurs__item">
+                        <button class="btn valeurs__btn d-flex gap-1 justify-content-center" data-bs-toggle="collapse"
+                            data-bs-target="#inclusion" aria-expanded="false">
+                            <span>Inclusion</span>
+                            <i class="bi bi-chevron-right valeurs__arrow"></i>
+                        </button>
+
+                        <div class="collapse valeurs__content" id="inclusion">
+                            <div class="p-3 ">
+                                la danse pour tous, peu importe l'âge ou le niveau.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valeurs__item">
+                        <button class="btn valeurs__btn d-flex gap-1 justify-content-center" data-bs-toggle="collapse"
+                            data-bs-target="#creativite" aria-expanded="false">
+                            <span>Créativité</span>
+                            <i class="bi bi-chevron-right valeurs__arrow"></i>
+                        </button>
+
+                        <div class="collapse valeurs__content" id="creativite">
+                            <div class="p-3 ">
+                                encourager chacun à trouver son style et s'exprimer librement.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valeurs__item">
+                        <button class="btn valeurs__btn d-flex gap-1 justify-content-center" data-bs-toggle="collapse"
+                            data-bs-target="#plaisir" aria-expanded="false">
+                            <span>Plaisir</span>
+                            <i class="bi bi-chevron-right valeurs__arrow"></i>
+                        </button>
+
+                        <div class="collapse valeurs__content" id="plaisir">
+                            <div class="p-3 ">
+                                apprendre dans une ambiance positive et motivante.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valeurs__item">
+                        <button class="btn valeurs__btn d-flex gap-1 justify-content-center" data-bs-toggle="collapse"
+                            data-bs-target="#progression" aria-expanded="false">
+                            <span>Progression</span>
+                            <i class="bi bi-chevron-right valeurs__arrow"></i>
+                        </button>
+
+                        <div class="collapse valeurs__content" id="progression">
+                            <div class="p-3 ">
+                                accompagner chaque danseur dans l'atteinte de ses objectifs personnels.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="py-5 galerie">
+            <div class="container">
+                <h3 class="mb-4">Impulse en photos</h3>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/galerie/galerie-1.jpg" class="d-block w-100"
+                                alt="Entraînement du groupe adultes dans la salle polyvalente">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/galerie/galerie-2.jpg" class="d-block w-100"
+                                alt="Jeunes ballerines en tutus roses">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/galerie/galerie-3.jpg" class="d-block w-100"
+                                alt="Femmes dansant le flamenco">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/galerie/galerie-4.jpg" class="d-block w-100"
+                                alt="Entraînement du groupe tous âges">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/galerie/galerie-5.jpg" class="d-block w-100"
+                                alt="Cours de ballet intermédiaire">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/galerie/galerie-6.jpg" class="d-block w-100"
+                                alt="Cours de hip-hop pour adolescents">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="py-5" id="contact">
+            <div class="container">
+                <h3 class="text-center mb-4">Contactez nous</h3>
+                <form action="">
+                    <div class="row  align-items-stretch">
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nom" placeholder="Saisissez votre nom"
+                                    required>
+                                <label for="nom">nom</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="courriel@example.com"
+                                    required>
+                                <label for="email">addresse courriel</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="phone" placeholder="Telephone">
+                                <label for="phone">numéro de téléphone</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="sujet" placeholder="Sujet de votre message">
+                                <label for="sujet">sujet</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <textarea name="message" class="form-control" id="message"
+                                    placeholder="Saisissez votre message" required></textarea>
+                                <label for="message">votre message</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md"></div>
+                        <div class="col-md">
+                            <button type="submit" class="btn btn-primary gradient-on-hover">Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal fade" id="confirmationModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Message envoyé</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Fermer"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Nous avons bien reçu votre message.<br>
+                                    Merci de nous avoir contactés.
+                                    Nous vous répondrons dans les plus brefs délais.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                                    Fermer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
     </main>
 
-    <footer class="py-4 text-white">
+    <footer class="py-4 mt-5 text-white">
         <div class="container">
             <div
                 class="d-flex gap-3 flex-column flex-md-row justify-content-between align-items-center align-items-md-end text-center">
@@ -152,6 +352,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <!-- pour faire apparaitre le modal de confirmation de soumission du formulaire de contact -->
+    <script>
+        document.querySelector('form')
+            .addEventListener('submit', e => {
+                e.preventDefault();
+                bootstrap.Modal
+                    .getOrCreateInstance('#confirmationModal')
+                    .show();
+            });
+    </script>
+
 </body>
 
 </html>

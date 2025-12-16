@@ -51,7 +51,7 @@ a {
 }
 
 .banniere {
-    height: 550px;
+    height: 600px;
     padding-top: 220px;
     position: absolute;
     top: 0;
@@ -65,22 +65,22 @@ a {
 }
 
 .link {
-        display: block;
-        color: black;
-        font-size: 1.5rem;
-        font-weight: 500;
-        transition: 0.3s;
+    display: block;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 .link:hover {
-        background: var(--gradient-tertiary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
+    background: var(--gradient-tertiary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .services {
-    margin-top: 550px;
+    margin-top: 600px;
 
     & .services__row {
         border-bottom: 1px solid var(--bs-primary);
@@ -97,8 +97,8 @@ a {
         filter: opacity(50%);
     }
 
-    & .link{
-    margin-bottom: -20px;   
+    & .link {
+        margin-bottom: -20px;
     }
 }
 
@@ -174,7 +174,14 @@ a {
 
 footer,
 .header-dark {
-    background-color: color-mix(in srgb, var(--bs-primary), black 10%);
+    background-color: var(--dark-bg-primary);
+    padding: 5px 0;
+}
+
+.header-dark {
+    & .nav-link:hover {
+        color: var(--light-secondary);
+    }
 }
 
 .courses-card {
@@ -185,7 +192,7 @@ footer,
 }
 
 .page-cours,
-.mission{
+.mission {
     background-color: var(--light-bg-primary);
 }
 
@@ -218,18 +225,19 @@ footer,
 .courses-card--img:nth-of-type(15) {
     background-image: url(../images/images-cours/ballet-2.svg);
 }
+
 .courses-card--img:nth-of-type(17) {
     background-image: url(../images/images-cours/hip-hop2.svg);
 }
 
-@media only screen and (max-width: 1045px) { 
+@media only screen and (max-width: 1045px) {
     .courses-card:nth-of-type(13),
     .courses-card--img:nth-of-type(17) {
         display: none;
     }
 }
 
-@media only screen and (max-width: 699px) { 
+@media only screen and (max-width: 699px) {
     .courses-card--img:nth-of-type(7) {
         display: none;
     }
@@ -241,32 +249,32 @@ footer,
         flex-shrink: 0;
     }
 
-    & .intro__decoration{
-    width: auto;
-    overflow: hidden;
+    & .intro__decoration {
+        width: auto;
+        overflow: hidden;
     }
 
     & .intro__infos {
-    background-color: var(--light-secondary);
+        background-color: var(--light-secondary);
     }
 
-    & img{
+    & img {
         max-height: 450px;
     }
 }
 
 .t-niveau {
-    white-space: nowrap!important;
+    white-space: nowrap !important;
 
     & h4 {
-    margin-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
 .t-head,
 .t-notes {
-font-weight: 400;
-font-size: 14px;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -274,9 +282,9 @@ font-size: 14px;
         display: none;
     }
 
-    table, 
-    tbody, 
-    tr, 
+    table,
+    tbody,
+    tr,
     td {
         display: block;
         width: 100%;
@@ -305,4 +313,34 @@ font-size: 14px;
 
 .special {
     font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.valeurs__item {
+    position: relative;
+}
+
+.valeurs__btn {
+    background-color: var(--dark-bg-primary);
+    /* border: none; */
+    color: white;
+    width: 300px;
+}
+
+.valeurs__btn:hover,
+.valeurs__btn:active{
+    background-color: var(--bs-primary) !important;
+    color: white !important;
+}
+
+.valeurs__arrow {
+    transition: transform 0.25s ease;
+}
+
+button[aria-expanded="true"] .value-arrow {
+    transform: translateY(5px) rotate(90deg);
+}
+
+.valeurs__content {
+    width: 300px;
+    background: var(--light-bg-primary);
 }

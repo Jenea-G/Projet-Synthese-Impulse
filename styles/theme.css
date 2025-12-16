@@ -18,6 +18,7 @@
   --light-secondary: color-mix(in srgb, var(--bs-secondary), white 20%);
   --light-primary: color-mix(in srgb, var(--bs-primary), white 20%);
   --light-bg-primary: color-mix(in srgb, var(--bs-primary), white 90%);
+  --dark-bg-primary: color-mix(in srgb, var(--bs-primary), black 20%);
 
   --bs-light-rgb: 255, 255, 255;
 
