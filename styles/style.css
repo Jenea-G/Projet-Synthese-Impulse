@@ -315,6 +315,19 @@ footer,
         min-width: 125px;
         --bs-btn-padding-x: 1rem;
     }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        padding-left: 10px;
+        background-color: var(--dark-bg-primary);
+    }
+
+    .page-accueil .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.644);
+    }
 }
 
 .special {
