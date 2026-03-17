@@ -259,8 +259,11 @@ footer,
         background-color: var(--light-secondary);
     }
 
-    & img {
+    & .intro__photo {
         max-height: 450px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
     }
 }
 
