@@ -231,6 +231,7 @@ footer,
 }
 
 @media only screen and (max-width: 1045px) {
+
     .courses-card:nth-of-type(13),
     .courses-card--img:nth-of-type(17) {
         display: none;
@@ -309,6 +310,11 @@ footer,
         font-weight: 600;
         color: var(--bs-primary);
     }
+
+    .btn {
+        min-width: 125px;
+        --bs-btn-padding-x: 1rem;
+    }
 }
 
 .special {
@@ -327,7 +333,7 @@ footer,
 }
 
 .valeurs__btn:hover,
-.valeurs__btn:active{
+.valeurs__btn:active {
     background-color: var(--bs-primary) !important;
     color: white !important;
 }
